@@ -80,7 +80,7 @@ const getProductDisplayHeader = (
     'digunakan': `${char} sedang menggunakan/mempraktikkan produk secara langsung, memperlihatkan cara kerja dan hasil nyata produk`,
     'ditunjuk':  `${char} menunjuk dan memperlihatkan produk yang terdisplay, sesekali mendekatkan kamera ke produk untuk detail lebih jelas`,
   };
-  return `Buatkan video realistic ${descriptions[displayType]}, Durasi ${segmentDuration} detik, MULTI SCENE, NO TEXT, NO MUSIC, CLEAR SUBJECT LOCK, ANTI BLUR VIDEO. Tiap adegan ~2 detik. Ultra HD 4K. - REAL VIDEO ONLY — setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya.`;
+  return `Buatkan video realistic ${descriptions[displayType]}, Durasi ${segmentDuration} detik, MULTI SCENE, NO TEXT, NO MUSIC, CLEAR SUBJECT LOCK, ANTI BLUR VIDEO. Tiap adegan ~2 detik. Ultra HD 4K. REAL VIDEO ONLY setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya.`;
 };
 
 const getProductVisualRule = (displayType: ProductDisplayType): string => {
