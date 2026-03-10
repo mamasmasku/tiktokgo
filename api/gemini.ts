@@ -18,7 +18,7 @@ export default async function handler(req: any, res: any) {
     });
 
     const response = await client.chat.completions.create({
-      model: 'gemini/gemini-2.5-flash', // format LiteLLM untuk Gemini
+      model: 'gemini-2.5-flash', // format LiteLLM untuk Gemini
       temperature,
       messages: [
         { role: 'system', content: systemInstruction },
