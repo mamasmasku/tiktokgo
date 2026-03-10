@@ -541,7 +541,7 @@ setSkripJualanOutput(data.text || '');
                         5.  **KONSTRUKSI PROMPT:** Ambil dialog yang sudah ditulis di langkah 4, potong ke segmen di jeda natural (koma, titik, jeda napas), lalu masukkan ke format prompt di bawah. WAJIB gunakan kalimat dialog yang sudah ditulis — DILARANG membuat dialog baru yang berbeda saat mengisi format prompt.
                         
                         **FORMAT PROMPT BARU (WAJIB DIIKUTI 100%):**
-                        'Buatkan video realistic [KARAKTER LENGKAP — tulis persis seperti input user, termasuk deskripsi fisik/style-nya, contoh: "@batop40 mengenakan hijab stylish"] sedang review [NAMA & DESKRIPSI HASIL RISET YANG DETAIL].
+                        'Buatkan video realistic [KARAKTER LENGKAP — tulis persis seperti input user, termasuk deskripsi fisik/style-nya, contoh: "@batop40 mengenakan hijab stylish"] sedang review [NAMA & DESKRIPSI HASIL RISET YANG DETAIL], REAL VIDEO ONLY setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya.
 
                         Opening visual 0–2 detik hanya menampilkan visual sinematik dari [PRODUK/HOTEL/TEMPAT WISATA] sebagai hook visual
                         
@@ -699,7 +699,7 @@ ${characterRule}
 **FORMAT OUTPUT — IKUTI 100%:**
 
 ▶ SEGMEN [N] ([X] detik)
-Buatkan video realistic ${character || 'faceless'} sedang review ${nameDesc} dengan gaya [GAYA KONTEN], Durasi [DURASI SEGMEN] detik, MULTI SCENE, NO TEXT, CLEAR SUBJECT LOCK, ANTI BLUR VIDEO. Tiap adegan visual sekitar 2–3 detik, Dialog langsung muncul di opening scene, tanpa intro shot, tanpa jeda. Tanpa teks, tanpa musik, tanpa watermark. Tone visual realistis seperti TikTok, bukan animasi. Ultra HD 4K. Video tertata rapi dari opening hingga closing tanpa terpotong, - REAL VIDEO ONLY — setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya.
+Buatkan video realistic ${character || 'faceless'} sedang review ${nameDesc} dengan gaya [GAYA KONTEN], Durasi [DURASI SEGMEN] detik, MULTI SCENE, NO TEXT, CLEAR SUBJECT LOCK, ANTI BLUR VIDEO. Tiap adegan visual sekitar 2–3 detik, Dialog langsung muncul di opening scene, tanpa intro shot, tanpa jeda. Tanpa teks, tanpa musik, tanpa watermark. Tone visual realistis seperti TikTok, bukan animasi. Ultra HD 4K. Video tertata rapi dari opening hingga closing tanpa terpotong, REAL VIDEO ONLY setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya.
 
 Deskripsi visual adegan 1, Dialog: "kalimat dialog 1"
 Deskripsi visual adegan 2, Dialog: "kalimat dialog 2"
@@ -836,7 +836,7 @@ ${characterRule}
 **FORMAT OUTPUT — IKUTI 100%:**
 
 ▶ SEGMEN [N] ([X] detik)
-Buatkan video realistic ${character || 'faceless'} ${category === 'Produk Jualan' ? 'mempromosikan' : category === 'Konten Umum/Bebas' ? 'membawakan konten tentang' : 'mereview'} ${nameDesc || 'sesuai gambar'}, gaya bicara padat dan natural, - REAL VIDEO ONLY — setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya,
+Buatkan video realistic ${character || 'faceless'} ${category === 'Produk Jualan' ? 'mempromosikan' : category === 'Konten Umum/Bebas' ? 'membawakan konten tentang' : 'mereview'} ${nameDesc || 'sesuai gambar'}, gaya bicara padat dan natural, REAL VIDEO ONLY setiap adegan WAJIB menampilkan gerakan nyata. DILARANG slideshow atau foto diam yang hanya di-pan/zoom kameranya,
 
 Deskripsi visual adegan 1, Dialog: "penggalan skrip adegan 1"
 
